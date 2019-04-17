@@ -14,7 +14,6 @@ import java.util.Set;
 @ToString
 @Entity
 @Table(name = "uaa_users")
-
 public class UserModel {
 
     @Id
@@ -34,5 +33,5 @@ public class UserModel {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
-    private Set<RolesModel> roleModels=new HashSet<>();
+    private Set<RoleModel> roleModels=new HashSet<>();
 }
